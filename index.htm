@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style type="text/css">
+		p{
+          color: red;
+          margin: 5px;
+          cursor: pointer;
+		}
+		p:hover{background: yellow;}
+		.bloop{
+			position: fixed;
+			top:0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 10;
+			background:  rgba(0,0,0,0.5);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.X1{
+			position: fixed;
+			top:0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			right: ;
+			z-index: 10;
+			background:  rgba(0,0,0,0.5);
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-start;
+		}
+
+	</style>
+</head>
+<body>
+	<p>A</p>
+	<h2>45465456</h2>
+	<div class="bloop">
+		<img src="1.jpg">
+	<div class="X1" >
+		<img src="X.png" width="100" height="100">
+		
+	</div>
+	<script type="text/javascript">
+		$('p').click(function(){
+			$('.bloop').slideToggle();
+		});
+		$('p').click(function(){
+			$('.X1').slideToggle();
+		});
+		$('img').click(function(){
+			$('.bloop').slideToggle();
+		});
+		$('img').click(function(){
+			$('.X1').slideToggle();
+		});
+	</script>
+
+</body>
+</html>
